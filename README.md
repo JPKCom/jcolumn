@@ -5,7 +5,7 @@ A jQuery plugin to make selected html elements the same height.
 
 ![without jcolumn screenshot](http://oliverj.net/img/jcolumn/without-jcolumn.png)
 
-###With jcolum
+###With jcolumn
 ![with jcolumn screenshot](http://oliverj.net/img/jcolumn/with-jcolumn.png)
 
 ##Install
@@ -27,7 +27,7 @@ Reference the JavaScript file manually directly after [jQuery](http://jquery.com
 Just invoke jcolumn on a class of elements.
 
 ```javascript
-$('.col').jColumn();
+$('.col').jcolumn();
 ```
 
 ##Options
@@ -35,7 +35,7 @@ $('.col').jColumn();
 option   | default | Description
 -------- | ------- | -----------
 delay    | 500     | The delayed time after the resize happens
-maxWidth | 767     | Every document width smaller than maxWidth will not use jColumn
+maxWidth | 767     | Every document width smaller than maxWidth will not use jcolumn
 
 ```javascript
 $('.col').jcolumn({

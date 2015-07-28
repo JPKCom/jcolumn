@@ -1,19 +1,12 @@
 {
   "name": "jcolumn",
+  "main": "jcolumn.min.js",
   "version": "0.0.1",
   "homepage": "https://github.com/oliver-j/jcolumn",
   "authors": [
     { "name" : "oliver jessner", "email": "oliver.jessner@gmail.com", "homepage": "http://oliverj.net"},
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oliver-j/jcolumn"
-  },
   "description": "A jQuery plugin to make selected html elements the same height",
-  "main": "jcolumn.min.js",
-  "dependencies": {
-      "jquery": "~1.10.2"
-  },
   "keywords": [
     "jquery",
     "plugin",
