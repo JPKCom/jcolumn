@@ -9,7 +9,6 @@ A jQuery plugin to make selected html elements the same height.
 ![with jcolumn screenshot](http://oliverj.net/img/jcolumn/with-jcolumn.png)
 
 ##Install
------
 
 ###Bower
 ```html
@@ -24,8 +23,6 @@ Reference the JavaScript file manually directly after [jQuery](http://jquery.com
 ```
 
 ##Usage
------
-
 
 Just invoke jcolumn on a class of elements.
 
@@ -34,7 +31,6 @@ $('.col').jColumn();
 ```
 
 ##Options
------
 
 option   | default | Description
 -------- | ------- | -----------
@@ -48,8 +44,7 @@ $('.col').jcolumn({
 });
 ```
 
-##Authors 
--------
+##Author
 
 Oliver Jessner [@oliverj_net](https://twitter.com/oliverj_net), [Website](http://oliverj.net) 
 
