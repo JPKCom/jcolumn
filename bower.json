@@ -4,15 +4,13 @@
   "version": "0.0.1",
   "homepage": "https://github.com/oliver-j/jcolumn",
   "authors": [
-     "name" : "oliver jessner", 
-     "email": "oliver.jessner@gmail.com", 
-     homepage": "http://oliverj.net"
+    "oliver jessner <oliver.jessner@gmail.com>"
   ],
   "description": "A jQuery plugin to make selected html elements the same height",
   "keywords": [
     "jquery",
     "plugin",
-    "repsonsive",
+    "responsive",
     "text",
     "column"
   ],
