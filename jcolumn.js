@@ -1,4 +1,4 @@
-// version 0.0.1
+// version 0.0.2
 ;(function ($, win, doc) { 'use strict';
     $.fn.jcolumn = function (options) { 
                 
@@ -6,7 +6,8 @@
     
     defaults = {
         delay: 500,
-        maxWidth: 767
+        maxWidth: 767,
+        callback: null
     }, 
     
     settings = $.extend( {}, defaults, options),
@@ -36,6 +37,8 @@
 			rows.each(function () {
 				$(this).height(elemH);
 			});
+            
+            settings.callback(elemH);
 		}
 	};
     

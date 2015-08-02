@@ -32,15 +32,19 @@ $('.col').jcolumn();
 
 ##Options
 
-option   | default | Description
--------- | ------- | -----------
-delay    | 500     | The delayed time after the resize happens
-maxWidth | 767     | Every document width smaller than maxWidth will not use jcolumn
+option   | default | type   | Description
+-------- | ------- | ------ | -----------
+delay    | 500     | number | The delayed time after the resize happens
+maxWidth | 767     | number | Every document width smaller than maxWidth will not use jcolumn
+callback | null    | function | A callaback function which gets triggered after resize
 
 ```javascript
 $('.col').jcolumn({
     delay: 500,
-    maxWidth: 767
+    maxWidth: 767,
+    callback: function (height) {
+        console.log('New max height is: ' + height);
+    }
 });
 ```
 
