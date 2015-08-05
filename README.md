@@ -42,7 +42,7 @@ option   | default  | type      | Description
 -------- | -------- | --------  | --------
 delay    | 500      | number    | The delayed time after the resize happens
 maxWidth | 767      | number    | Every document width smaller than maxWidth will not use jcolumn
-resize   | true     | function  | Disable resize event with false
+resize   | true     | boolean   | Disable resize event with false
 callback | null     | function  | A callaback function which gets triggered after resize
 
 
