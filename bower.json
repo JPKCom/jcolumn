@@ -15,7 +15,8 @@
     "plugin",
     "responsive",
     "text",
-    "column"
+    "column",
+    "height"
   ],
   "license": "MIT"
 }

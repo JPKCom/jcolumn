@@ -1,4 +1,5 @@
-// version 0.0.2
+// version 0.0.3
+// visit: http://oliver-j.github.io/jcolumn/
 ;(function ($, win, doc) { 'use strict';
     $.fn.jcolumn = function (options) { 
                 
@@ -21,7 +22,7 @@
 	  	};
 	})(), 
 
-	resizeColumn = function (rows) { 
+	resizeColumnHeight = function (rows) { 
 		var elemH = 0;
             
 		if ($(doc).width() >= settings.maxWidth) {
@@ -38,14 +39,16 @@
 				$(this).height(elemH);
 			});
             
-            settings.callback(elemH);
+            if (settings.callback !== null) {
+                settings.callback(elemH);   
+            }
 		}
 	};
     
 	win.addEventListener('resize', function() {
-		delay(resizeColumn(elements), settings.delay);
+		delay(resizeColumnHeight(elements), settings.delay);
 	});
     
-    resizeColumn(elements); // init
+    resizeColumnHeight(elements); // init
     return this;
 };}(jQuery, window, document));
