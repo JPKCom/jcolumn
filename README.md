@@ -16,6 +16,11 @@ Size: 0.461 kB
 bower install jcolumn
 ```
 
+###npm
+```html
+npm install jcolumn
+```
+
 ###The oldschool way
 Reference the JavaScript file manually directly after [jQuery](http://jquery.com):
 
