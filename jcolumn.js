@@ -1,4 +1,4 @@
-// version 0.0.3
+// version 0.1.0
 // visit: http://oliver-j.github.io/jcolumn/
 ;(function ($, win, doc) { 'use strict';
     $.fn.jcolumn = function (options) { 
@@ -8,7 +8,8 @@
     defaults = {
         delay: 500,
         maxWidth: 767,
-        callback: null
+        callback: null,
+        resize: true
     }, 
     
     settings = $.extend( {}, defaults, options),
@@ -45,10 +46,14 @@
 		}
 	};
     
-	win.addEventListener('resize', function() {
-		delay(resizeColumnHeight(elements), settings.delay);
-	});
+    // wrapper function for init and event
+    var jColumn = function () { 
+        delay(resizeColumnHeight(elements), settings.delay); 
+    };
     
-    resizeColumnHeight(elements); // init
-    return this;
-};}(jQuery, window, document));
+    if (settings.resize) {
+	    win.addEventListener('resize', jColumn);
+    }
+    
+    jColumn();
+return this; };}(jQuery, window, document));
