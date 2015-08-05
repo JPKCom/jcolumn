@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jcolumn by oliver-j</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jcolumn</h1>
+      <h2 class="project-tagline">A jQuery plugin to make selected html elements the same height.</h2>
+      <a href="https://github.com/oliver-j/jcolumn" class="btn">View on GitHub</a>
+      <a href="https://github.com/oliver-j/jcolumn/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/oliver-j/jcolumn/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="jcolumn" class="anchor" href="#jcolumn" aria-hidden="true"><span class="octicon octicon-link"></span></a>jcolumn</h1>
+
+<p>A jQuery plugin to make selected html elements the same height.
+Size: 0.461 kB </p>
+
+<h3>
+<a id="without-jcolumn" class="anchor" href="#without-jcolumn" aria-hidden="true"><span class="octicon octicon-link"></span></a>Without jcolumn</h3>
+
+<p><img src="http://oliverj.net/img/jcolumn/without-jcolumn.png" alt="without jcolumn screenshot"></p>
+
+<h3>
+<a id="with-jcolumn" class="anchor" href="#with-jcolumn" aria-hidden="true"><span class="octicon octicon-link"></span></a>With jcolumn</h3>
+
+<p><img src="http://oliverj.net/img/jcolumn/with-jcolumn.png" alt="with jcolumn screenshot"></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<h3>
+<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower</h3>
+
+<div class="highlight highlight-html"><pre>bower install jcolumn</pre></div>
+
+<h3>
+<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span class="octicon octicon-link"></span></a>npm</h3>
+
+<div class="highlight highlight-html"><pre>npm install jcolumn</pre></div>
+
+<h3>
+<a id="the-oldschool-way" class="anchor" href="#the-oldschool-way" aria-hidden="true"><span class="octicon octicon-link"></span></a>The oldschool way</h3>
+
+<p>Reference the JavaScript file manually directly after <a href="http://jquery.com">jQuery</a>:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jcolumn.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Just invoke jcolumn on a class of elements.</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>.col<span class="pl-pds">'</span></span>).jcolumn();</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>default</th>
+<th>type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>delay</td>
+<td>500</td>
+<td>number</td>
+<td>The delayed time after the resize happens</td>
+</tr>
+<tr>
+<td>maxWidth</td>
+<td>767</td>
+<td>number</td>
+<td>Every document width smaller than maxWidth will not use jcolumn</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>null</td>
+<td>function</td>
+<td>A callaback function which gets triggered after resize</td>
+</tr>
+</tbody>
+</table>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">'</span>.col<span class="pl-pds">'</span></span>).jcolumn({
+    delay<span class="pl-k">:</span> <span class="pl-c1">500</span>,
+    maxWidth<span class="pl-k">:</span> <span class="pl-c1">767</span>,
+    <span class="pl-en">callback</span><span class="pl-k">:</span> <span class="pl-k">function</span> (<span class="pl-smi">height</span>) {
+        <span class="pl-en">console</span><span class="pl-c1">.log</span>(<span class="pl-s"><span class="pl-pds">'</span>New max height is: <span class="pl-pds">'</span></span> <span class="pl-k">+</span> height);
+    }
+});</pre></div>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Oliver Jessner <a href="https://twitter.com/oliverj_net">@oliverj_net</a>, <a href="http://oliverj.net">Website</a> </p>
+
+<p>Copyright © 2015</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/oliver-j/jcolumn">Jcolumn</a> is maintained by <a href="https://github.com/oliver-j">oliver-j</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
