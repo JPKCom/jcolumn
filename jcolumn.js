@@ -5,10 +5,11 @@
                 
     var elements = this,
     
+    
     defaults = {
         delay: 500,
         maxWidth: 767,
-        callback: null,
+        callback: function (elemH) {},
         resize: true
     }, 
     
@@ -40,9 +41,7 @@
 				$(this).height(elemH);
 			});
             
-            if (settings.callback !== null) {
-                settings.callback(elemH);   
-            }
+            settings.callback(elemH);   
 		}
 	};
     
