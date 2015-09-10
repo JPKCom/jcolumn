@@ -56,7 +56,7 @@ $('.col').jcolumn({
 });
 ```
 
-##Author
+###Author
 
 Oliver Jessner [@oliverj_net](https://twitter.com/oliverj_net), [Website](http://oliverj.net) 
 
