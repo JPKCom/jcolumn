@@ -4,10 +4,10 @@ Size: 0.508 kB
 
 ###Without jcolumn
 
-![without jcolumn screenshot](http://oliverj.net/img/jcolumn/without-jcolumn.png)
+![without jcolumn screenshot](http://oliverj.net/img/jqueryplugins/without-jcolumn.png)
 
 ###With jcolumn
-![with jcolumn screenshot](http://oliverj.net/img/jcolumn/with-jcolumn.png)
+![with jcolumn screenshot](http://oliverj.net/img/jqueryplugins/with-jcolumn.png)
 
 ##Install
 
