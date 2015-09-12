@@ -2,33 +2,33 @@
 A jQuery plugin to make selected html elements the same height.
 Size: 0.508 kB 
 
-###Without jcolumn
+### Without jcolumn
 
 ![without jcolumn screenshot](http://oliverj.net/img/jqueryplugins/without-jcolumn.png)
 
-###With jcolumn
+### With jcolumn
 ![with jcolumn screenshot](http://oliverj.net/img/jqueryplugins/with-jcolumn.png)
 
-##Install
+## Install
 
-###Bower
+### Bower
 ```html
 bower install jcolumn
 ```
 
-###npm
+### npm
 ```html
 npm install jcolumn
 ```
 
-###The oldschool way
+### The oldschool way
 Reference the JavaScript file manually directly after [jQuery](http://jquery.com):
 
 ```html
 <script src="jcolumn.min.js" type="text/javascript" charset="utf-8"></script>
 ```
 
-##Usage
+## Usage
 
 Just invoke jcolumn on a class of elements.
 
@@ -36,7 +36,7 @@ Just invoke jcolumn on a class of elements.
 $('.col').jcolumn();
 ```
 
-##Options
+## Options
 
 option   | default  | type      | Description
 -------- | -------- | --------  | --------
@@ -56,7 +56,7 @@ $('.col').jcolumn({
 });
 ```
 
-###Author
+### Author
 
 Oliver Jessner [@oliverj_net](https://twitter.com/oliverj_net), [Website](http://oliverj.net) 
 
