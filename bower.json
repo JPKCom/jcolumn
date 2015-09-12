@@ -1,7 +1,7 @@
 {
   "name": "jcolumn",
   "main": "jcolumn.min.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://oliver-j.github.io/jcolumn/",
   "authors": [
     "oliver jessner <oliver.jessner@gmail.com>"
